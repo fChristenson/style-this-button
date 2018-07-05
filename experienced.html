@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background: steelblue;
+      color: white;
+      font-size: 1em;
+      outline-color: orange;
+      cursor: pointer;
+    }
+
+    .error-button {
+      background: crimson !important;
+    }
+
+    .special {
+      background: blue;
+    }
+
+    .super-special {
+      background: blue !important;
+      padding: 20px;
+      font-size: 2em;
+      outline-color: purple;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <button>Click me</button>
+  <button class="error-button">Click me</button>
+  <button class="error-button special">I am special</button>
+  <button class="error-button super-special">I am even more special</button>
+</body>
+
+</html>

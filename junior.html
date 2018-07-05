@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      background: steelblue;
+      color: white;
+      font-size: 1em;
+      outline-color: orange;
+    }
+
+    .another-button,
+    .almost-the-same-button {
+      color: crimson;
+      background: white;
+      border: purple 1px solid;
+      outline-color: slateblue;
+    }
+
+    .another-button h2 {
+      color: blueviolet;
+    }
+
+    .another-button h2 span {
+      color: crimson;
+    }
+
+    .almost-the-same-button h2 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <button>Click me</button>
+  <button class="another-button">
+    <div>
+      <h2>This is
+        <span>my</span> message to
+        <span>you</span>
+      </h2>
+      <span>My subtitle</span>
+    </div>
+    <p>There is some really important stuff here</p>
+  </button>
+
+  <button class="almost-the-same-button">
+    <div>
+      <h2>This is
+        <span>my</span> other message to
+        <span>you</span>
+      </h2>
+    </div>
+    <p>There is some really important stuff here</p>
+  </button>
+</body>
+
+</html>

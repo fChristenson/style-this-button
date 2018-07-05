@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .button,
+    .icon {
+      border: none;
+      cursor: pointer;
+    }
+
+    .primary-button,
+    .warning-button,
+    .error-button,
+    .link-button {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      padding: 22px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .refresh-icon {
+      background-image: url(./refresh.svg);
+    }
+
+    .primary-button,
+    .link-button {
+      background: steelblue;
+      outline-color: orange;
+      color: white;
+    }
+
+    .error-button {
+      background: crimson;
+      outline-color: blue;
+      outline-width: 2px;
+      outline-offset: 2px;
+      color: white;
+    }
+
+    .warning-button {
+      background: orange;
+      outline-color: purple;
+      color: black;
+    }
+
+    .link-button {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <button>What if I need a
+    <br>basic button and
+    <br>you destroyed it?</button>
+  <button class="icon refresh-icon"></button>
+  <a class="button link-button" href="#">Is a button always a button?</a>
+  <span class="button primary-button">Is a button always a button?</span>
+  <button class="button primary-button">Click me</button>
+  <button class="button warning-button">Click me</button>
+  <button class="button error-button">Click me</button>
+  <form>
+    <input class="button primary-button" type="submit" value="Is a button always a button?">
+  </form>
+</body>
+
+</html>
