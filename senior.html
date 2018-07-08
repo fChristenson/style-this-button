@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>senior</title>
   <style>
     * {
       margin: 0;
@@ -19,6 +19,16 @@
       align-items: center;
       min-height: 100vh;
     }
+
+    /*
+      Think of your css as isolated enhancements that are not allowed to destroy.
+      
+      A class of styling should never force another class of styling to account
+      for the mutations it creates.
+
+      Think of it as chewing tobacco vs smoking, one only affects you and the other
+      affects everyone around you.
+    */
 
     .button,
     .icon {
@@ -34,6 +44,8 @@
       font-size: 1em;
     }
 
+    /*A button may be many things but an icon is a subclass of a button, it is a specific thing*/
+
     .icon {
       width: 22px;
       height: 22px;
@@ -45,6 +57,11 @@
     .refresh-icon {
       background-image: url(./refresh.svg);
     }
+
+    /*
+      Approaching the button problem this way is generic and extensible but perhaps BEM
+      is better if we don't care about being too generic?
+    */
 
     .primary-button,
     .link-button {

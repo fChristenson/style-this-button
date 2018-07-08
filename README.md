@@ -4,9 +4,16 @@
 
 * What is a good decision and what is a bad decision in css?
 * What are the most common issues with css?
-* How to think about css
+* Destructive css
+* How to think about css?
 
 ## Notes
+
+Stop me if you have ever been here:
+
+"Let's make a generic solution we can reuse across our application!"
+
+Sigh... here we go again.
 
 Let us ask the fundamental question, when does css become a problem?
 
@@ -18,5 +25,5 @@ I will argue that legacy css comes from poor choices made at a previous
 point in time, choices that lead to a snowball effect of patches when the
 application grows and changes.
 
-If we accept that what we know today will change tomorrow we need to design
+If we accept that what we know today will change tomorrow then we need to design
 our css to be easy to extend or update.
