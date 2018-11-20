@@ -9,12 +9,6 @@
 
 ## Notes
 
-Stop me if you have ever been here:
-
-"Let's make a generic solution we can reuse across our application!"
-
-Sigh... here we go again.
-
 Let us ask the fundamental question, when does css become a problem?
 
 Some will argue that the problem starts when you have legacy css.

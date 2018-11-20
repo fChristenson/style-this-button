@@ -31,6 +31,7 @@
     }
 
     #my-section {
+      width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -43,31 +44,33 @@
     }
 
     #my-section .special {
-      color: white !important;
-      outline-color: blueviolet !important;
+      color: white;
+      outline-color: blueviolet;
     }
-
-    /*We could fix this but what if this breaks something on other pages?*/
 
     #some-new-feature button {
-      color: green !important;
-      outline-color: blueviolet !important;
+      color: green;
+      outline-color: blueviolet;
     }
 
-    #some-new-feature .same-as-button {
-      color: black !important;
-      background: crimson !important;
-      outline-color: blue !important;
+    /* This nesting can continue until you are overriding layers of styles */
+    #some-new-feature button.same-as-button {
+      color: black;
+      background: crimson;
+      outline-color: blue;
     }
   </style>
 </head>
 
 <body>
   <div id="my-section">
+    <!-- We start simple -->
     <button>Click me</button>
     <button class="special">Click me</button>
+    <!-- New feature comes in -->
     <div id="some-new-feature">
       <button>Click me</button>
+      <!-- What if yet another feature comes in? -->
       <button class="same-as-button">Click me</button>
     </div>
   </div>
